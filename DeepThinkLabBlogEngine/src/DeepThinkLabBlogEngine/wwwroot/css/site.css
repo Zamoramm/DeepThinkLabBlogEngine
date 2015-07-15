@@ -1,0 +1,25 @@
+﻿body
+{
+    background-color: #747678;
+    font-family: 'Roboto', sans-serif;
+    color: #747678;
+    background-image: url("../images/always_grey.png");
+    background-repeat:repeat;
+    
+}
+
+#topNav
+{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.navLinks
+{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+footer p{
+    color: #00A1DE;
+}

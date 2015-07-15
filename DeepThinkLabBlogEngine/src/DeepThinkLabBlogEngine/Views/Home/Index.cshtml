@@ -3,75 +3,119 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="./css/site.css" rel="stylesheet" />
+    <link href="~/css/landingPage.css" rel="stylesheet" />
     <title>Deep Thing Lab Blog</title>
 </head>
 <body>
-    <nav>
-        <a>
-            <img alt="Deep Think Lab Logo" src="" />
-        </a>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-    </nav>
+    <div class="container">
+        <nav class="navbar navbar-default" id="topNav">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logonotext.png" alt="Deep Think Lab" />
+                </a>
+            </div>
 
-    <section>
-            <img src="" />
-                <h1>Deep Think Lab Blog Engine - Introduction</h1>
-                <p>As a developer it’s important to stay up to date with current technology.  So I decided that I would build   a blog engine using the latest and greatest tools and techniques for the Microsoft .Net stack.</p>
-            <span>Matthew Zamora</span>
-            <span>6/29/2015</span>
-            <span>Development</span>
-            <span>read more</span>
-    </section>
-
-    <section>
-            <img src="" />
-                <h1>Deep Think Lab Blog Engine – Connecting to GitHub.</h1>
-                <p>I already had an account set up on Github.com so all I needed to do was create a new repository and clone it to my desktop.</p>
-            <span>Matthew Zamora</span>
-            <span>6/29/2015</span>
-            <span>GitHub</span>
-            <span>read more</span>
-    </section>
-
-    <section>
-            <img src="" />
-                <h1>Deep Think Lab Blog Engine – ASP.Net 5.0</h1>
-                <p>If you haven’t noticed Microsoft has been changing things up pretty drastically here of late.  They have open sourced a lot of code, made version of office that run on the iOS and Android.   Heck they have even introduced a new hardware platform called Hololens.</p>
-            <span>Matthew Zamora</span>
-            <span>6/29/2015</span>
-            <span>ASP.Net 5.0</span>
-            <span>read more</span>
-    </section>
-
-    <form>
-        <input type="text" placeholder="Enter Keywords" />
-        <input type="submit" value="Go" />
-    </form>
-    <ul>
-        <li>
-            <img src="" />
-            <a href="#">Post Title</a>
-        </li>
-        <li>
-            <img src="" />
-            <a href="#">Post Title</a>
-        </li>
-    </ul>
-    <footer>
-        <nav>
-            
-                <ul>
+            <div class="navbar-collapse collapse ">
+                <ul class="nav navbar-nav navLinks">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-            
+            </div>
         </nav>
-        <p>&copy; 2015 - Deep Think Lab</p>
-    </footer>
+        <div class="row">
+            <div class="col-md-8">
+                <section class="well articleSummary">
+                    <div class="row">
+                        <img class="col-md-4 img-responsive" src="./images/blogimages/7.png" />
+                        <div class="col-md-8 articleDetails">
+                            <h1>Deep Think Lab Blog Engine - Introduction</h1>
+                            <p>As a developer it’s important to stay up to date with current technology.  So I decided that I would build   a blog engine using the latest and greatest tools and techniques for the Microsoft .Net stack.</p>
+                        </div>
+                    </div>
+                    <div class="row articleLinks">
+                        <span class="col-md-2">Matthew Zamora</span>
+                        <span class="col-md-2">6/29/2015</span>
+                        <span class="col-md-2">Development</span>
+                        <span class="col-md-2">read more</span>
+                    </div>
+                </section>
+
+                <section class="well articleSummary">
+                    <div class="row">
+                        <img class="col-md-4 img-responsive" src="~/images/blogimages/scottwills.jpg" />
+                        <div class="col-md-8 articleDetails">
+                            <h1>Deep Think Lab Blog Engine – Connecting to GitHub.</h1>
+                            <p>I already had an account set up on Github.com so all I needed to do was create a new repository and clone it to my desktop.</p>
+                        </div>
+                    </div>
+                    <div class="row articleLinks">
+                        <span class="col-md-2">Matthew Zamora</span>
+                        <span class="col-md-2">6/29/2015</span>
+                        <span class="col-md-2">GitHub</span>
+                        <span class="col-md-2">read more</span>
+                    </div>
+                </section>
+
+                <section class="well articleSummary">
+                    <div class="row">
+                        <img class="col-md-4 img-responsive" src="~/images/blogimages/hydrant1.jpg" />
+                        <div class="col-md-8 articleDetails">
+                            <h1>Deep Think Lab Blog Engine – ASP.Net 5.0</h1>
+                            <p>If you haven’t noticed Microsoft has been changing things up pretty drastically here of late.  They have open sourced a lot of code, made version of office that run on the iOS and Android.   Heck they have even introduced a new hardware platform called Hololens.</p>
+                        </div>
+                    </div>
+                    <div class="row articleLinks">
+                        <span class="col-md-2">Matthew Zamora</span>
+                        <span class="col-md-2">6/29/2015</span>
+                        <span class="col-md-2">ASP.Net 5.0</span>
+                        <span class="col-md-2">read more</span>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-4">
+                <form class="well search">
+                    <input type="text" class="searchValues" placeholder="Enter Keywords" />
+                    <button class="btn " type="submit">
+                        <span class="glyphicon glyphicon-search"> Go</span>
+                    </button>
+                </form>
+                <div class="well col-md-12" id="recentPosts">
+                    <h2>Recent Posts</h2>
+                    <ul class="col-md-12">
+                        <li class="col-md-12">
+                            <img src="~/images/blogImages/7-small.png" />
+                            <a class="col-md-8" href="#">Deep Think Lab Blog Engine - Introduction</a>
+                        </li>
+                        <li class="col-md-12">
+                            <img src="~/images/blogImages/1-small.jpg" />
+                            <a class="col-md-8" href="#">Deep Think Lab Blog Engine – Connecting to GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <nav class="navbar navbar-default">
+                <div class="navbar-collapse collapse">
+                    <ul  class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+            <p>&copy; 2015 - Deep Think Lab</p>
+        </footer>
+    </div>
 </body>
 </html>

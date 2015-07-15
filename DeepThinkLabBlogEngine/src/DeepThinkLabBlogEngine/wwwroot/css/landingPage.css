@@ -1,0 +1,125 @@
+﻿.articleSummary
+{
+    padding: 0;
+}
+
+    .articleSummary img
+    {
+        margin-top: -1px;
+        padding: 0;
+        border-top-left-radius: 4px;
+        width: 31.5%;
+        margin-left: 14px;
+    }
+
+    .articleDetails h1
+{
+    margin-bottom: 25px;
+}
+
+    
+.articleLinks
+{
+    background-color:#4D4F53;
+    margin-bottom:-1px;
+    margin-left:-1px;
+    margin-right:-1px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color:white;
+    font-size:85%;
+}
+
+.articleLinks span
+{
+    margin-top:5px;
+    padding-top:30px;
+    padding-bottom:5px;
+    margin-bottom:-1px;
+}
+
+.articleLinks span:nth-child(1)
+{
+      background-color:#2892C7;
+      border-bottom-left-radius:4px;
+}
+.articleLinks span:nth-child(2)
+{
+      background-color:#00A1DE;
+}
+.articleLinks span:nth-child(3)
+{
+      background-color:#63B1E5;
+}
+.articleLinks span:nth-child(4)
+{
+      background-color:#BEC9D6;
+      float:right;
+      color:#747678;
+      border-bottom-right-radius:4px;
+}
+
+.search{
+    padding:30px;
+}
+
+.btn{
+    background-color:#00A1DE;
+    color:black;
+}
+
+.searchValues
+{
+   background-color : #BEC9D6;
+	border: 1px none #008000;
+    padding:7px;
+	
+}
+
+#recentPosts
+{
+    padding:0;
+    padding-bottom:20px;
+    float:left;
+}
+
+#recentPosts h2{
+    background-color:#00A1DE;
+    margin-left:-1px;
+    margin-right:-1px;
+    margin-top:-1px;
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+    padding-top:20px;
+    padding-left:20px;
+    padding-bottom:10px;
+    color:white;
+}
+
+#recentPosts ul
+{
+    list-style:none;
+    padding:0;
+    
+}
+
+#recentPosts li{
+    padding-bottom:20px;
+    border-bottom:1px solid #BEC9D6;
+    margin-top:20px;
+    float:left
+}
+
+#recentPosts img
+{
+    float:left;
+}
+
+#recentPosts a
+{
+    float:left;
+    font-size:130%;
+    word-wrap:break-word;
+}
+
+
