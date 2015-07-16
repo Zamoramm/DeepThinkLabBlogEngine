@@ -1,0 +1,32 @@
+﻿.blogEntry
+{
+    padding-bottom:0;
+    margin-bottom:50px;
+    border-bottom:0;
+    
+}
+
+.blogEntry h1{
+   margin-bottom:30px;
+}
+
+#blogImage{
+    margin-right:20px;
+    margin-bottom:20px;
+    float:left;
+}
+
+#blogEntryLinks
+{
+    margin-right:-20px;
+    margin-left:-20px;
+    margin-bottom:-1px;
+    background-color:#4D4F53;
+    
+}
+
+article
+{
+    font-size:120%;
+}
+

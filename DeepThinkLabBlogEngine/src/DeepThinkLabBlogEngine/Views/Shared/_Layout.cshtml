@@ -1,0 +1,78 @@
+﻿<!DOCType html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href="./lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="./css/site.css" rel="stylesheet" />
+    <link href="~/css/landingPage.css" rel="stylesheet" />
+    <link href="~/css/blogentry.css" rel="stylesheet" />
+    <title>Deep Thing Lab Blog</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-default" id="topNav">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logonotext.png" alt="Deep Think Lab" />
+                </a>
+            </div>
+
+            <div class="navbar-collapse collapse ">
+                <ul class="nav navbar-nav navLinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-md-8">
+                @RenderBody()
+            </div>
+            <div class="col-md-4">
+                <form class="well search">
+                    <input type="text" class="searchValues" placeholder="Enter Keywords" />
+                    <button class="btn " type="submit">
+                        <span class="glyphicon glyphicon-search"> Go</span>
+                    </button>
+                </form>
+                <div class="well col-md-12" id="recentPosts">
+                    <h2>Recent Posts</h2>
+                    <ul class="col-md-12">
+                        <li class="col-md-12">
+                            <img src="~/images/blogImages/7-small.png" />
+                            <a class="col-md-8" href="#">Deep Think Lab Blog Engine - Introduction</a>
+                        </li>
+                        <li class="col-md-12">
+                            <img src="~/images/blogImages/1-small.jpg" />
+                            <a class="col-md-8" href="#">Deep Think Lab Blog Engine – Connecting to GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <nav class="navbar navbar-default">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+            <p>&copy; 2015 - Deep Think Lab</p>
+        </footer>
+    </div>
+</body>
+</html>
